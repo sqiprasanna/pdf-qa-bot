@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF QA Bot</title>
+</head>
+<body>
+    <h1>PDF Query Interface</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="file">Upload PDF:</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="query">Enter your query:</label>
+            <input type="text" name="query" id="query" placeholder="Type your question here...">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if answer %}
+    <h2>Response:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>

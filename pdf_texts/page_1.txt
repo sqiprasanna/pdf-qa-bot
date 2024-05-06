@@ -1,0 +1,38 @@
+IMAGE SEARCH ENGINE
+Team 8
+Sai Prasanna Kumar Kumaru (016651544)
+Neeharika Yeluri (016680508)
+Rahul Raghava Peela (016668247)
+Pranav Chellagurki (015221310)
+Abstract:
+This project aims to develop an image search engine leveraging big data technologies,
+incorporating advanced models like CLIP for image and text understanding. By
+harnessing the power of ElasticSearch, Spark, and FastAPI, in conjunction with Kafka for
+real-time data streaming and Hugging Face Transformers for NLP tasks, the system will
+provide eﬃcient and accurate image retrieval capabilities. Through the utilization of
+advanced algorithms and data processing techniques, the search engine will enable
+users to ﬁnd visually similar images within vast repositories, facilitating various
+applications in ﬁelds such as e-commerce, content management, and visual data
+analysis.
+Problem Statement:
+Traditional image search engines often struggle to handle large-scale datasets
+eﬃciently, leading to slow retrieval times and limited search accuracy. Additionally,
+existing solutions may not adequately address the need for similarity-based image
+retrieval, hindering the effectiveness of image search applications. Thus, there is a
+pressing need for a robust image search engine that can eﬃciently process large
+volumes of image data while providing accurate and relevant search results. Integrating
+advanced models like CLIP and leveraging Kafka for real-time data streaming, along
+with Hugging Face Transformers for NLP tasks, will enhance the system's capabilities in
+understanding both image and text data, further improving search accuracy and
+relevance.
+Current Challenges:
+●
+Scalability: Managing and processing large-scale image datasets eﬃciently
+poses a signiﬁcant challenge, exacerbated by the need to integrate complex
+models like CLIP.
+●
+Search Accuracy: Ensuring accurate retrieval of visually similar images and
+relevant textual information requires sophisticated algorithms and techniques.
+●
+Real-time Response: Providing timely search results, especially in applications
+requiring real-time interaction, is crucial but challenging, necessitating the

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search in Document</title>
+</head>
+<body>
+    <h1>Search in Uploaded Document</h1>
+    <form action="/search" method="post">
+        <input type="text" name="query" placeholder="Enter search query" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+    <h2>Results for "{{ query }}":</h2>
+    <ul>
+        {% for item in results %}
+        <li>{{ item.text }} - {{ item.metadata }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No results to show.</p>
+    {% endif %}
+</body>
+</html>
