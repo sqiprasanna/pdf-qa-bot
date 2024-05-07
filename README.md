@@ -40,10 +40,12 @@ This repository contains a PDF Question-Answering chat application that extracts
     - `Flask`
     - `PyMuPDF`
     - `openai`
-    - `llama-index`
+    - `llama_index`
     - `chromadb`
     - `nltk`
     - `rouge-score`
+    - `llama-index-vector-stores-chroma`
+    
 
 ## Configuration
 

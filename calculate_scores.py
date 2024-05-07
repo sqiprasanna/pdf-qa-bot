@@ -4,6 +4,7 @@ from rouge_score import rouge_scorer
 
 def calculate_bleu(reference, hypothesis):
     """Calculate the BLEU score."""
+    print(reference,hypothesis)
     reference = [reference.split()]  # NLTK expects a list of lists
     hypothesis = hypothesis.split()
     smoothie = SmoothingFunction().method4  # Use smoothing to handle zero counts
@@ -23,13 +24,12 @@ def process_excel_data(file_path):
     # Initialize lists to store scores
     bleu_scores = []
     rouge_scores = {'rouge1': [], 'rouge2': [], 'rougeL': []}
-
     # Iterate over each row in the Excel data
     for index, row in data.iterrows():
         question = row['query']
         reference_response = row['reference']
         generated_response = row['response']
-
+        print(row)
         # Calculate BLEU Score
         bleu_score = calculate_bleu(reference_response, generated_response)
         bleu_scores.append(bleu_score)
@@ -50,5 +50,5 @@ def process_excel_data(file_path):
     print("Scores calculated and saved to scores.xlsx")
 
 # Example usage
-file_path = "session_data.xlsx"  # Provide the path to your Excel file
+file_path = "./session_data_with_reference.xlsx"  # Provide the path to your Excel file
 process_excel_data(file_path)
