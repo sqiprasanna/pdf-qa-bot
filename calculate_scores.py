@@ -45,7 +45,7 @@ def process_excel_data(file_path):
         data[f'ROUGE {metric}'] = scores_list
 
     # Save DataFrame to Excel with scores
-    data.to_excel("scores.xlsx", index=False)
+    data.to_excel("scores_old.xlsx", index=False)
 
     print("Scores calculated and saved to scores.xlsx")
 
